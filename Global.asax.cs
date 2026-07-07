@@ -7,8 +7,6 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Data.Entity;
 using HubSpace.Web.Models;
-using SimpleFrameworkApp;
-
 namespace HubSpace.Web
 {
     public class MvcApplication : System.Web.HttpApplication

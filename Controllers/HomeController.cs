@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace SimpleFrameworkApp.Controllers
+namespace HubSpace.Web.Controllers
 {
     public class HomeController : Controller
     {
