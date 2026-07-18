@@ -6,17 +6,20 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using HubSpace.Web.Models;
+using HubSpace.Web.Migrations;
+
 namespace HubSpace.Web
 {
     public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
         {
-            // 1. Define a estratégia de criação
-            Database.SetInitializer(new CreateDatabaseIfNotExists<HubSpaceContext>());
+            // 1. Define a estratégia de migração automática
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<HubSpaceContext, Configuration>());
 
-            // 2. Linha temporária: Força o EF a disparar o banco agora na inicialização
+            // 2. Força o EF a checar/aplicar migrações pendentes na inicialização
             using (var ctx = new HubSpaceContext())
             {
                 ctx.Database.Initialize(force: true);

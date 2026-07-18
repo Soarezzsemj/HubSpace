@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using BCrypt.Net;
+
 
 namespace HubSpace.Web.Controllers
 {
@@ -10,6 +12,13 @@ namespace HubSpace.Web.Controllers
     {
         public ActionResult Index()
         {
+            
+            //string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+
+            //Console.WriteLine($"Hashed Password: {hashedPassword}");
+
+            
+            
             return View();
         }
 

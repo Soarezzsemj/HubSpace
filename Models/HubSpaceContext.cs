@@ -11,5 +11,7 @@ namespace HubSpace.Web.Models
 
         // Isso avisa ao EF para criar uma tabela chamada "Espacos" baseada na classe acima
         public DbSet<Espaco> Espacos { get; set; }
+        
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 }
