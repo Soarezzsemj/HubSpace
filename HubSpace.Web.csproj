@@ -162,6 +162,10 @@
     <Compile Include="Models\HubSpaceContext.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\Interface\IRepositorioPadrao.cs" />
+    <Compile Include="Repositorio\RepositorioPadrao.cs" />
+    <Compile Include="Repositorio\RepositorioUsuario.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\.gitkeep" />

@@ -12,13 +12,6 @@ namespace HubSpace.Web.Controllers
     {
         public ActionResult Index()
         {
-            
-            //string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
-
-            //Console.WriteLine($"Hashed Password: {hashedPassword}");
-
-            
-            
             return View();
         }
 

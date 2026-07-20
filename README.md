@@ -9,6 +9,7 @@ O **HubSpace** é uma plataforma web monolítica voltada para a gestão e reserv
 * **Framework Principal:** .NET Framework 4.8 / ASP.NET MVC 5
 * **Persistência de Dados:** Entity Framework 6 (Abordagem Code-First com Migrations)
 * **Banco de Dados:** Microsoft SQL Server (LocalDB)
+* **Segurança & Criptografia:** BCrypt.Net-Next
 * **Renderização:** Razor Engine (Server-Side Rendering - SSR)
 * **IDE Utilizada:** JetBrains Rider
 
